@@ -6,5 +6,6 @@
 本项目参考相关的技术文档
 	http://www.ibm.com/developerworks/web/library/wa-restful/
 	http://www.ibm.com/developerworks/web/library/wa-spring3webserv/index.html
- 
+关于本项目使用的过滤组件已有本人动手整理为Maven版本方便大家学习
+https://github.com/gitchina/alex-word-filter
 
