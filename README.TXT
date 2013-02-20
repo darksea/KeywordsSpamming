@@ -26,7 +26,7 @@ https://github.com/gitchina/alex-word-filter
 	协同于github（只有一个github账号即可）fork pull request
 贡献地址：https://github.com/gitchina/KeywordsSpamming
 
-畅        想：
+畅   想：
 	gitchina.org将对外提供该服务，开放源代码提供给个人或企业搭建该服务
 
 
