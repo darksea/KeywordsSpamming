@@ -21,7 +21,7 @@ https://github.com/gitchina/alex-word-filter
 	返回过滤结果（警告级、屏蔽后内容、过滤掉的敏感字符串、原始内容）然后应用层那到结果做其
 它业务处理
 技术要求：
-	了解springmvc git maven hao
+	了解springmvc git maven 
 招募贡献：
 	协同于github（只有一个github账号即可）fork pull request
 贡献地址：https://github.com/gitchina/KeywordsSpamming
