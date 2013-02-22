@@ -10,7 +10,7 @@ public class KeywordsQuery {
 	//原始文本
 	private String originString;
 	//替换为*或其它符号将敏感词语
-	private String replacement;
+	private char replacement;
 
 	public String getOriginString() {
 		return originString;
@@ -20,13 +20,15 @@ public class KeywordsQuery {
 		this.originString = originString;
 	}
 
-	public String getReplacement() {
+	public char getReplacement() {
 		return replacement;
 	}
 
-	public void setReplacement(String replacement) {
+	public void setReplacement(char replacement) {
 		this.replacement = replacement;
 	}
+
+	 
 	
 	
 	

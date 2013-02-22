@@ -1,5 +1,8 @@
 package org.gitchina.ks.web;
 
+import org.apache.log4j.Logger;
+import org.gitchina.ks.dto.KeywordsQuery;
+import org.gitchina.wordfiter.WordFilterUtil;
 import org.gitchina.wordfiter.result.FilteredResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,6 +19,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller
 public class KeywordsSpammingServer {
+	
+	private static final Logger log = Logger.getLogger(KeywordsSpammingServer.class);
 	/**
 	 * 
 	 * @Title: filteringMaliciousKeyWords
@@ -26,8 +31,13 @@ public class KeywordsSpammingServer {
 	 * @throws
 	 */
 	@RequestMapping(value = "/filteringMaliciousKeyWords", method = RequestMethod.POST)
-	public @ResponseBody FilteredResult filteringMaliciousKeyWords(@RequestBody String KeyWords  ) {
-		
-		return null;
+	public @ResponseBody FilteredResult filteringMaliciousKeyWords(@RequestBody KeywordsQuery keywords  ) {
+		FilteredResult fr = null;
+		try {
+			fr =WordFilterUtil.filterHtml(keywords.getOriginString(), keywords.getReplacement());
+		} catch (Exception e) {
+			log.error(e.getMessage());
+		}
+		return fr;
 	}
 }
