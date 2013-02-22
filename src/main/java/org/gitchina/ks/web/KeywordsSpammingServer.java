@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @date:        2013-2-19 下午2:01:11
  */
 @Controller
+@RequestMapping("/ks")
 public class KeywordsSpammingServer {
 	
 	private static final Logger log = Logger.getLogger(KeywordsSpammingServer.class);

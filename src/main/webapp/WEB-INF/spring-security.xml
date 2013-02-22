@@ -7,7 +7,7 @@
 
 	<!-- 采用spring-security完成Http鉴权 -->
 	<http>
-		<intercept-url pattern="/rest/ks/*" access="ROLE_USER" />
+		<intercept-url pattern="/rest/*" access="ROLE_USER" />
 		<http-basic />
 	</http>
 
